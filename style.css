@@ -72,7 +72,7 @@ nav img {
 .hero-btn{
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.767);
     border: 1px solid #fff;
     padding: 12px 34px;
     font-size: 13px;
@@ -81,13 +81,22 @@ nav img {
     cursor: pointer;
 }
 .hero-btn:hover{
-    border: 1px solid #716BC5 ;
-    background: #716BC5;
+    border: 1px solid #8a82ff ;
+    background: #4a44a186;
     transition: 1s;
 }
 
 nav .fa{
     display: none;
+}
+
+#preloader{
+    background: #ffeefb url(CalKhal/kuromilo.gif) no-repeat center center; 
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 
 @media(max-width: 700px){
@@ -122,6 +131,15 @@ nav .fa{
     
     .nav-links ul{
         padding: 30px;
+    }
+
+    #preloader{
+        background: #ffeefb url(CalKhal/kuromilo.gif) no-repeat center center; 
+        background-size: 30%;
+        height: 100vh;
+        width: 59%;
+        position: center;
+        z-index: 100;
     }
 }
 
@@ -319,7 +337,7 @@ h3{
 .cta{
     margin: 100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(114, 99, 170, 0.7),rgba(100, 54, 85, 0.7)),url(images/cotton.gif);
+    background-image: linear-gradient(rgba(114, 99, 170, 0.7),rgba(255, 145, 218, 0.534)),url('images/cotton.gif');
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -376,7 +394,7 @@ h3{
     height: 50vh;
     width: 100%;
     background-image: linear-gradient(rgba(12, 4, 30, 0.7),rgba(12, 4, 30, 0.7)),url('images/checkered.png');
-    background-size: 800px;
+    background-size: 100px;
     background-size: cover;
     background-position: center;
     text-align: center;
